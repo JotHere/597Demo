@@ -1,55 +1,152 @@
 <!doctype html>
-<html lang="en" data-pgc-master="index.html">
+<html lang="en" data-pgc-master="master.html">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title data-pgc-field="title">New page</title>
-        <link href="css/style.css" rel="stylesheet">
+        <title>Navbar Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="navbar.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     </head>
     <body>
-        <nav>
-            <a href="page2.html">Notes</a>
-        </nav>
-        <h1 data-pgc-field="page_heading">Project Notes</h1>
-        <p data-pgc-field="page_content">Standard HTML elements<br>Nesting of elements<br>UTF-8 characters (including emoji)<br>CSS formatting<br>Simple JS snippets<br>More to be added</p>
-        <hr />
-        <div>
-            <ul>
-                <li>Headings (h1, h2, h3, h4…)
-                    <br>
-                </li>
-                <li>Paragraphs (p)
-                    <br>
-                </li>
-                <li>Bold (strong)
-                    <br>
-                </li>
-                <li>Italics (em)
-                    <br>
-                </li>
-                <li>Line breaks (br)
-                    <br>
-                </li>
-                <li>Visible lines (hr)
-                    <br>
-                </li>
-                <li>External/internal links (a)
-                    <br>
-                </li>
-                <li>Lists (ul, ol, li)
-                    <br>
-                </li>
-                <li>Tables (table, tr, td)
-                    <br>
-                </li>
-                <li>More to be added
-                    <br>
-                </li>
-            </ul>
-        </div>
-        <p>Paragraph</p>
-        <p><h2>Collapsible outlines</h2><p>As seen on&nbsp;<a href="http://1.jothere.com/OPMySS" target="_blank">http://1.jothere.com/OPMySS</a>; the trick is to have some button to toggle the classes between collapsed and expanded.</p></p>
+        <div class="container">
+            <!-- Static navbar -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">597Demo</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="page2.html">Notes</a>
+                            </li>
+                            <li>
+                                <a href="master.html">Master Template</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Something else here</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Nav header</li>
+                                    <li>
+                                        <a href="#">Separated link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">One more separated link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active">
+</li>
+                            <li>
+</li>
+                            <li>
+</li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+            </nav>
+            <!-- Main component for a primary marketing message or call to action -->
+            <div data-pgc-field="page_content">
+                <h1>Project Notes</h1>
+                <ul>
+                    <li>
+                        Standard HTML elements
+
+                        <br>
+                    </li>
+                    <ul>
+                        <li>Headings (h1, h2, h3, h4…)</li>
+                        <li>Paragraphs (p)</li>
+                        <li>Bold (strong)</li>
+                        <li>Italics (em)
+                            <br>
+                        </li>
+                        <li>Line breaks (br)
+                            <br>
+                        </li>
+                        <li>Visible lines (hr)
+                            <br>
+                        </li>
+                        <li>External/internal links (a)
+                            <br>
+                        </li>
+                        <li>Lists (ul, ol, li)
+                            <br>
+                        </li>
+                        <li>Tables (table, tr, td)
+                            <br>
+                        </li>
+                        <li>More to be added
+                            <br>
+                        </li>
+                    </ul>
+                    <li>Nesting of elements
+                        <br>
+                    </li>
+                    <li>UTF-8 characters (including emoji)
+                        <br>
+                    </li>
+                    <li>CSS formatting
+                        <br>
+                    </li>
+                    <li>Simple JS snippets
+                        <br>
+                    </li>
+                    <li>Collapsible outlines
+                        <br>
+                    </li>
+                    <ul>
+                        <li>As seen on 
+                            <a href="http://1.jothere.com/OPMySS" target="_blank">http://1.jothere.com/OPMySS</a>; the trick is to have some button to toggle the classes between collapsed and expanded.
+                            <br>
+                        </li>
+                    </ul>
+                    <li>More to be added
+                        <br>
+                    </li>
+                </ul>
+            </div>
+        </div>         
+        <!-- /container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     </body>
 </html>

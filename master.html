@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en" data-pgc-master="master.html">
+<!DOCTYPE html>
+<html lang="en" data-pgc-set-master>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,37 +79,9 @@
                 <!--/.container-fluid -->
             </nav>
             <!-- Main component for a primary marketing message or call to action -->
-            <div data-pgc-field="page_content">
-                <h1>Pinegrow CMS Demo</h1>
-                <p>This is a template instance page; it is indicated as an instance with the HTML tag&nbsp;<code>&lt;html lang="en" data-pgc-master="master.html"&gt;</code>. The value of the <code>data-pgc-master</code> attribute is the filename of this page's master template (in this case, <code>master.html</code>).</p>
-                <p><a href="http://docs.pinegrow.com/master-pages/#use-a-master-page-in-a-project">http://docs.pinegrow.com/master-pages/#use-a-master-page-in-a-project</a> gives instructions for creating instance pages from a master page. This process may result in Pinegrow creating a screenshots directory with a thumbnail of the master template.</p>
-                <p>This page has an editable area definition for <a href="http://docs.pinegrow.com/pinegrow-cms-for-static-html-websites/">Pinegrow's CMS mode</a>, indicated with the HTML tag&nbsp;<code>&lt;div data-pgc-field="page_content"&gt;</code>. The value of the <code>data-pgc-field</code> attribute is an ID, which distinguishes it from other editable areas. As noted in&nbsp;<a href="http://docs.pinegrow.com/master-pages/" style="background-color: rgb(255, 255, 255);">http://docs.pinegrow.com/master-pages/</a>, the master page's content is applied to all of its instances, except for editable areas.</p>
-                <p>Besides master/instance pages, I have also looked at using partial pages as noted in&nbsp;<a href="http://docs.pinegrow.com/working-with-partials/">http://docs.pinegrow.com/working-with-partials/</a>. Here are some notable pros and cons of partials:</p>
-                <ul>
-                    <li>Pros</li>
-                    <ul>
-                        <li>Avoids duplication in the source repository (space-efficient).</li>
-                        <li>Easier for contributors to make edits and compare revisions.</li>
-                        <li>Can also be easily used in non-static sites.</li>
-                    </ul>
-                    <li>Cons</li>
-                    <ul>
-                        <li>Static hosting sites such as GitHub Pages don't necessarily render out partial pages.</li>
-                        <ul>
-                            <li>According to GitHub's documentation at&nbsp;
-                                <a href="https://help.github.com/articles/using-a-static-site-generator-other-than-jekyll/">https://help.github.com/articles/using-a-static-site-generator-other-than-jekyll/</a>, static sites built without Jekyll should be built locally, with the output (meaning full HTML pages) pushed to the appropriate branch.
-                            </li>
-                            <li>I could choose to edit this page as a partial within Pinegrow; however, when viewed on GitHub Pages, it would be missing the elements from the master template.</li>
-                            <li>Another possible way to render partial pages is through a client-side JavaScript framework; however, this method is currently outside the scope of my project.</li>
-                        </ul>
-                    </ul>
-                </ul>
-                <ul>
-                    <ul>
-                        <ul>
-</ul>
-                    </ul>
-                </ul>
+            <div data-pgc-edit="page_content">
+                <h1>Sample Title</h1>
+                <p>This is the master template page; it is indicated as a master with the HTML tag&nbsp;<code>&lt;html lang="en" data-pgc-set-master&gt;</code>.&nbsp;<a href="http://docs.pinegrow.com/master-pages/#creating-a-master-page">http://docs.pinegrow.com/master-pages/#creating-a-master-page</a> gives instructions for setting up a master page within Pinegrow.</p>
             </div>
         </div>         
         <!-- /container -->
